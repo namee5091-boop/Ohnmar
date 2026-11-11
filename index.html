@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ohnmar Aung - Personal CV</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+    padding: 35px 15px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+}
+
+/* HEADER */
+.header {
+    background: #65676b;
+    height: 210px;
+    margin: 35px 0 0 100px;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 30px 20px 220px;
+}
+
+.header h1 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* PROFILE IMAGE */
+.profile {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 75px;
+    left: 5%;
+    border: 5px solid white;
+}
+
+/* MAIN CONTENT */
+.main {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    gap: 0;
+    margin-top: 75px;
+}
+
+/* LEFT SIDE */
+.left {
+    background: #e5e7e7;
+    padding: 25px 35px;
+    border-radius: 35px 0 35px 35px;
+    min-height: 850px;
+    border-right: 2px solid #777;
+}
+
+.section {
+    margin-bottom: 45px;
+}
+
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.line {
+    height: 2px;
+    background: #444;
+    margin-bottom: 15px;
+}
+
+.section p,
+.section li {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.section ul {
+    padding-left: 25px;
+}
+
+/* RIGHT SIDE */
+.right {
+    padding: 20px 45px;
+}
+
+.right h2 {
+    font-size: 27px;
+    margin-bottom: 17px;
+}
+
+.about {
+    margin-top: 85px;
+}
+
+.about ul {
+    padding-left: 22px;
+}
+
+.about li {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    .header {
+        margin: 90px 0 0;
+        height: 140px;
+        padding: 35px 10px 10px 125px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .profile {
+        width: 145px;
+        height: 145px;
+        top: 15px;
+        left: 20px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        margin-top: 25px;
+    }
+
+    .left {
+        min-height: auto;
+        border-right: none;
+        border-radius: 25px;
+    }
+
+    .right {
+        padding: 30px 15px;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .section h2,
+    .right h2 {
+        font-size: 23px;
+    }
+
+    .about li {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Ohnmar Aung</h1>
+    </header>
+
+    <!-- PROFILE PHOTO -->
+    <img src="photo.jpg" class="profile"
+         alt="Ohnmar Aung Profile">
+
+    <div class="main">
+
+        <!-- LEFT COLUMN -->
+        <aside class="left">
+
+            <div class="section">
+                <h2>CONTACT</h2>
+                <div class="line"></div>
+                <p>☎ &nbsp; 09 963953931</p>
+                <p>✉ &nbsp; namee5091@gmail.com</p>
+                <p>📍 &nbsp; No.3, Thamine Station Road,
+                    Myangone, Yangon, Myanmar</p>
+            </div>
+
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <div class="line"></div>
+                <p><b>YOUTH INTERNATIONAL COLLEGE</b></p>
+                <p>HND Computing 1st Year</p>
+            </div>
+
+            <div class="section">
+                <h2>SKILLS</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Creativity</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>LANGUAGE</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>English</li>
+                    <li>Tamil</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- RIGHT COLUMN -->
+        <main class="right">
+ <h2>ABOUT ME</h2>
+            <div class="line"></div>
+
+            <div class="about">
+                <ul>
+                    <li>
+                        Motivated and responsible individual
+                        seeking to begin a professional career.
+                    </li>
+
+                    <li>
+                        A quick learner with strong communication
+                        and interpersonal skills, eager to gain new
+                        experience, learn new skills, and contribute
+                        positively to the team.
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+
+    </div>
+</div>
+
+</body>
+</html>
